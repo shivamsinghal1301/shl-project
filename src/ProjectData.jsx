@@ -10,7 +10,7 @@ const Sidebar = ({ project, onClose }) => {
       </button>
       <h3>{project['Project.Title']}</h3>
       <hr></hr>
-      <p><i className='fas fa-code project-icon'></i> <span className='text-head'>Title</span><br />{project['Project.Title']}</p>
+      <p><i className='fas fa-cloud'></i> <span className='text-head'>Title</span><br />{project['Project.Title']}</p>
       <p><span className='text-head'> Project Technologies</span><br />{project['Project.Technologies']}</p>
       <p><span className='text-head'>Technical_Skillset.Frontend</span><br/> {project['Technical_Skillset.Frontend']}</p>
       <p><span className='text-head'>Technical_Skillset.Backend</span><br/> {project['Technical_Skillset.Backend']}</p>

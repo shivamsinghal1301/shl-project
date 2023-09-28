@@ -1,3 +1,15 @@
+.fullbody { 
+  background-color: lightgrey;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+@keyframes example {
+  0%   {background-color: lightblue;}
+  50%  {background-color: lightpink;}
+  100% {background-color: lightgreen;}
+}
+
 .page-container {
     margin-left: 20px;
     margin-right: 20px;
@@ -6,15 +18,27 @@
     width: 100%; /* Adjust the width as needed */
     /* Add more custom styles as needed */
     font-size: 16px;
+    box-shadow: 2px 2px 1px lightskyblue;
+  }
+  .card:hover{
+      border-radius: 8px;
+      border-color: red;
+      transform: scale(1.04);
+      border-width: 1px;
   }
   .card-title {
     font-size: 16px;
   }
   .card-text {
     font-size: 14px;
+    font-weight: 400;
     overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  }
+  .data-text{
+    font-size: 16px;
+    font-weight: 500;
   }
 
   /* Add these styles to your CSS file */
@@ -46,9 +70,9 @@
   }
   .text-head{
     font-style:normal;
-    color: rgb(71, 71, 139);
+    color: rgb(24, 24, 119);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: bold;
+    font-weight: 500;
   }
 
   /* CSS styles for the search bar */
@@ -73,6 +97,8 @@
   top: 0;
   left: 0;
   padding: 10px; 
-  font-size: 24px;
+  font-size: 26px;
+  font-weight: 500;
+  text-shadow: 2px 2px 5px red;
   }
   

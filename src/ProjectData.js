@@ -10,7 +10,7 @@ function ProjectList() {
 
 
   useEffect(() => {
-    fetch('https://sheetdb.io/api/v1/pq0mr0hz33nvw')
+    fetch('https://sheetdb.io/api/v1/4ipleox81zfkh')
       .then((response) => response.json())
       .then((data) => {
         setData(data);
@@ -77,6 +77,7 @@ function ProjectList() {
     };
 
     return (
+      <div className = "fullbody">
       <div className="page-container">
         <div className = 'new-text'>Shl Assessment</div>
         {loading ? (
@@ -100,16 +101,16 @@ function ProjectList() {
                 >
                   <div
                     className="card border-success h-100"
-                    style={{ height: '200px', cursor: 'pointer' }}
+                    style={{ height: '200px', cursor: 'pointer'}}
                     onClick={() => openSidebar(item)}
                   >
                     <div className="card-body">
                       <h5 className='card-title'>Title:<br/> {item['Project.Title']}</h5>
-                      <p className='card-text'>Project Technologies<br/> {item['Project.Technologies']}</p>
-                      <p className='card-text'>Technical_Skills.Frontend<br/> {item['Technical_Skillset.Frontend']}</p>
-                      <p className='card-text'>Technical_Skills.Backend<br/> {item['Technical_Skillset.Backend']}</p>
-                      <p className='card-text'>Technical_Skills.Databases<br/> {item['Technical_Skillset.Databases']}</p>
-                      <p className='card-text'>Technical_Skills.Infrastructre<br/> {item['Technical_Skillset.Infrastructre']}</p>
+                      <p className='card-text'>Project Technologies<br/><span className='data-text'> {item['Project.Technologies']}</span></p>
+                      <p className='card-text'>Technical_Skills.Frontend<br/><span className='data-text'> {item['Technical_Skillset.Frontend']}</span></p>
+                      <p className='card-text'>Technical_Skills.Backend<br/><span className='data-text'> {item['Technical_Skillset.Backend']}</span></p>
+                      <p className='card-text'>Technical_Skills.Databases<br/><span className='data-text'> {item['Technical_Skillset.Databases']}</span></p>
+                      <p className='card-text'>Technical_Skills.Infrastructre<br/><span className='data-text'> {item['Technical_Skillset.Infrastructre']}</span></p>
                     </div>
                   </div>
                 </div>
@@ -117,6 +118,7 @@ function ProjectList() {
             </div>
           </>
         )}
+      </div>
       </div>
     );
   };
