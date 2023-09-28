@@ -1,0 +1,78 @@
+.page-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .card {
+    width: 100%; /* Adjust the width as needed */
+    /* Add more custom styles as needed */
+    font-size: 16px;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+  .card-text {
+    font-size: 14px;
+    overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  }
+
+  /* Add these styles to your CSS file */
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 350px; /* Adjust the width as needed */
+    background-color: #f0f0f0; /* Background color of the sidebar */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    z-index: 1;
+    box-shadow: -2px 0 6px rgba(0, 0, 0, 0.1); /* Add a shadow for a subtle effect */
+  }
+  
+  .sidebar {
+    padding: 20px;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    color: red;
+  }
+  .text-head{
+    font-style:normal;
+    color: rgb(71, 71, 139);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+
+  /* CSS styles for the search bar */
+/* CSS styles for the search bar */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .search-input {
+    width: 400px; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Adjust the border-radius for rounded corners */
+    outline: none;
+  }
+  
+  .new-text {
+    position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px; 
+  font-size: 24px;
+  }
+  
